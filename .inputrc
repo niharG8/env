@@ -1,0 +1,7 @@
+# shows multiple matching files on first tab
+set show-all-if-ambiguous on 
+## arrow up
+"\e[A":history-search-backward
+## arrow down
+"\e[B":history-search-forward
+
