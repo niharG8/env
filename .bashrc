@@ -1,4 +1,6 @@
-# env vars
+################
+### env vars ###
+################
 export NDDSHOME=/Applications/rti_connext_dds-5.2.3
 export RTI_LICENSE_FILE=/Applications/rti_connext_dds-5.2.3/rti_license.dat
 export VAHANA_REPOS=/Users/nihar/vahana_repos
@@ -8,11 +10,16 @@ export VAHANA_NAVIO_SRC=$VAHANA_REPOS/Navio2/C++
 export RTI_LD_LIBRARY_PATH='/Applications/rti_connext_dds-5.2.3/lib/x64Darwin15clang7.0' # needed for MATLAB / DDS blockset
 export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer                          # needed for MATLAB / DDS blockset
 
-# path modifications
+##########################
+### path modifications ###
+##########################
 export PATH=$HOME/bin:$PATH                             # ARM compilers
 export PATH=$NDDSHOME/bin:$PATH                         # Connext binaries 
 export PATH=/Applications/MATLAB_R2016b.app/bin/:$PATH  # MATLAB
 
+###############
+### aliases ###
+###############
 # app shortcuts
 alias dockeravionics="docker run -v /Users:/host/Users -it avionics/ubuntu:v1.1 /bin/bash"
 alias sshdeskpi="ssh pi@192.168.2.7"
@@ -34,5 +41,9 @@ alias datestring="date '+%Y%m%d_%H%M%S'"
 # transfer folders with progress
 alias myrsync='rsync --progress -avz'
 
+#####################
+### miscellaneous ###
+#####################
 # activate bash-completion (see https://github.com/scop/bash-completion)
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
