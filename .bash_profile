@@ -3,3 +3,4 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
+. /Users/nihar/anaconda/etc/profile.d/conda.sh

@@ -1,0 +1,27 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = Nihar
+#	email = nihar.gandhi@airbus-sv.com
+[core]
+	excludesfile = /Users/nihar/.gitignore_global
+[difftool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	trustExitCode = true
+[user]
+	name = Nihar Gandhi
+	email = nihar.gandhi@airbus-sv.com
+[commit]
+	template = /Users/nihar/.stCommitMsg
+[alias]
+	co = checkout
+    st = status
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
