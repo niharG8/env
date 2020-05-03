@@ -12,7 +12,6 @@ export MATLAB_SHELL='/bin/bash'
 export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer                          # needed for MATLAB / DDS blockset
 export TESTDATA_REPO=~/testdata
 export DESERIALIZE_DIR='/Users/nihar/vahana_repos/vahana_test/tools/data_recorder'
-export RESCALE_API_KEY=669f07e5433a190e347569729795d45abf4b2a40
 
 ##########################
 ### path modifications ###
